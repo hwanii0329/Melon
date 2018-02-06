@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # django_extensions 설치 후
+    # django_extensions
     'django_extensions',
 
     'album',
