@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+from artist.models import Artist
+
+
+def artist_list(request):
+    artists = Artist.objects.all()
+    context = {
+        'artists':artists,
+    }
+    return render(request, 'artist/artist_list.html', context)
